@@ -13,7 +13,7 @@ public class SaisieEntierQ1 {
 				x = valeur.nextInt();
 				break;
 			} catch (InputMismatchException e) {
-// il faut consommer la valeur du buffer d'entrée
+
 				
 				System.out.println("Erreur -250140" +x+ "nest pas un entier !" );
 			}

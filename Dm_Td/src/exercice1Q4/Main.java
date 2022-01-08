@@ -3,17 +3,17 @@ package exercice1Q4;
 public class Main {
 	public static void main(String[] args) {
 		 int i ;
-		 System.out.println("//////////////// ") ;
-		 System.out.println(" Question 2 : création et test de variables ") ;
-		 System.out.println("//////////////// ") ;
+		 System.out.println("==================  ") ;
+		 System.out.println("\n") ;
+		 System.out.println("==================  ") ;
 
-		 Divertissement em1 = new Divertissement("La roue de la fortune","Foucault") ;
+		 Divertissement em1 = new Divertissement("Tanal sa boula neikh","Chérif Diallo") ;
 		 if ( em1.Programmer(20) )
 		 System.out.println("ok emission programmée");
 		 else
 		 System.out.println("emission non programmée") ;
 
-		 Fiction em2 = new Fiction("Citizen Kane", "Wells",true,3) ;
+		 Fiction em2 = new Fiction("Découverte", "Marcel Sarr",true,3) ;
 		 if ( em2.Programmer(17) )
 		 System.out.println("ok emission programmée");
 		 else
@@ -37,22 +37,21 @@ public class Main {
 		 programme[3] = em4 ;
 		 int nbEmissions = 4;
 
-		 System.out.println("//////////////// ") ;
+		 System.out.println("==================  ") ;
 		 System.out.println(" Question 4 a ") ;
-		 System.out.println("//////////////// ") ;
+		 System.out.println("==================  ") ;
 		 for (i=0; i<nbEmissions; i++){
 		 if ( programme[i].Programmee() )
 		 programme[i].Affiche() ;
 		 }
-		 System.out.println("//////////////// ") ;
+		 System.out.println("==================  ") ;
 		 System.out.println(" Question 4 b ") ;
-		 System.out.println("//////////////// ") ;
+		 System.out.println("==================  ") ;
 
-		 //on évite de traiter toutes les paires d'émission en cochant
-		 //et donc stockant dans un tableau les plages utilisées
+		 
 
 		 boolean[] plage = new boolean [24] ;
-		 /// initialisation du tableau à faux
+		
 		 for (i=0; i<24; i++) plage[i] = false ;
 		 /// parcours de toutes les émissions
 		 for (i=0; i<nbEmissions; i++)
@@ -62,10 +61,11 @@ public class Main {
 		 if ( plage[j] == false ) plage[j] = true ;
 		 else System.out.println("attention : superposition sur la plage " + j);
 		 }
-		 System.out.println("//////////////// ") ;
+		 System.out.println("==================  ") ;
 		 System.out.println(" Question 4 c ") ;
-		 System.out.println("//////////////// ") ;
-		 // On suppose aucune superposition
+		 System.out.println("==================  ") ;
+		 
+		 
 		 int[] plage2 = new int [24] ;
 		 /// initialisation du tableau à -1
 		 for (i=0; i<24; i++) plage2[i] = -1 ;

@@ -13,7 +13,7 @@ public class SaisieEntierQ2 {
 				x = input.nextInt();
 				break;
 			} catch (InputMismatchException e) {
-// il faut consommer la valeur du buffer d'entrée
+
 				String s = input.next();
 				System.out.println("Erreur la valeur saisier n'est pas un entier Recommencez !");
 			}

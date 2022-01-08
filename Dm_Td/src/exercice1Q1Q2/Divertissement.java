@@ -9,7 +9,7 @@ public class Divertissement extends Emission {
 		animateur = anim;
 	}
 
-	public String toString() { // générée automatiquement
+	public String toString() {
 		 return super.toString()+" : "+animateur.toString(); 
 		 }
 
